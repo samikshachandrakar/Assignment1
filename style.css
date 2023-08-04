@@ -75,13 +75,17 @@ nav{
     color: rgb(192, 190, 190);
     font-size: larger;
 }
+hr{
+    color: gray;
+}
 .about{
-    color: rgb(17, 17, 17);
-    background-color: rgb(241, 234, 234);
+    color: rgb(7, 7, 7);
+    background-color: black;
+    padding-bottom: 30px;
 }
 .about .row{
    display: flex;
-    background-color: rgb(13, 12, 12);
+    background-color: black;
     padding-top: 70px;
 }
 .about .row .col1{
@@ -96,6 +100,7 @@ nav{
 .about .row .col2{
     flex-basis: 70%;
     color: white;
+    padding-left: 150px;
 }
 .about .row .col2 h1{
     text-align: center;
@@ -109,7 +114,6 @@ nav{
 }
 .about .row .col2 p{
     text-align: justify;
-    padding-left: 150px;
     padding-top: 30px;
     padding-right: 100px;
     letter-spacing: 1px;
@@ -128,13 +132,22 @@ nav{
     text-decoration: none;
     padding: 10px 20px;
 }
-.about .row .col2 a:hover{
-    color: red;
-    background: none;
+.about .row .col2 .wrapper .button{
+    display: inline-block;
+    background-color: rgb(249, 10, 10);
+    border: 5px;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 9px;
+    margin: 50px 30px;
+}
+.about .row .col2 .wrapper .button i:hover{
+    color: blue;
 }
 .skill .contain{
-    padding: 90px 50px;
-    background-color: white;
+    padding: 70px 50px;
+    background-color: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
 }
@@ -145,6 +158,9 @@ nav{
     text-decoration: underline;
     padding-bottom: 70px;
 }    
+.skill .contain h1:hover{
+    color: yellow;
+}
 .skill .contain h2{
     font-size: 250%;
     padding-bottom: 20px;
@@ -198,11 +214,17 @@ nav{
     height: 4px;
 }
 .contact{
-    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
     width: 100%;
+    background-image: url('pexels-sathesh-d-698808.jpg');
+    opacity: 1;
+    background-size: cover;
+    padding-bottom: 30px;
 }
 .contact .title h1{
-    padding: 30px 0;
+    padding: 35px 0;
+    padding-bottom: 55px;
     text-align: center;
     font-weight: bold;
     font-size: 55px;
@@ -210,7 +232,7 @@ nav{
     font-family: 'Times New Roman', Times, serif;
 }
 .contact .title h2{
-    color: red;
+    color: yellow;
 }
 .contact .title .row{
     display: flex;
@@ -231,7 +253,10 @@ nav{
     line-height: 40px;
     width: 100%;
 }
-
+fieldset{
+    padding: 0 40px;
+    padding-bottom: 7px;
+}
 
 
 

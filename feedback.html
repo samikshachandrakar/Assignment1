@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Feedback Form</title>
+    <style type="text/css">
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        form{
+            background-color: black;
+            margin: 10px 80px;
+            padding-bottom: 30px;
+        }
+        h1{
+            color: yellow;
+            text-align: center;
+            padding-top: 25px;
+        }
+        fieldset{
+            margin: 0 30px;
+            padding: 0 40px;
+            padding-bottom: 20px;
+            line-height: 30px;
+        }
+        legend{
+            color: yellow;
+        }
+        form{
+            size: 50%;
+        }
+        label{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form method="post"> <h1>Welcome To Feedback Form</h1>
+        <fieldset>
+            <legend>
+                Your Details:
+            </legend>
+            <label>
+                Name:  <input type="text" name="Name" size="50">
+            </label><br>
+            <label>
+                Email: <input type="text" name="Email" size="50">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Your Review:
+            </legend>
+            <label for="review"> How did you hear about me?
+                <select name="referrer" id="review">
+                    <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+            </label><br>
+            <label>
+                Would you visit again?<br>
+                <input type="radio" name="rating" value="yes">Yes 
+                <input type="radio" name="rating" value="no">No 
+                <input type="radio" name="rating" value="maybe">Maybe
+            </label><br>
+            <label for="comment">Comments: </label><br>
+            <textarea rows="10" cols="40" id="comment"></textarea><br>
+            <label>
+                <input type="checkbox" name="subscribe" checked="checked"/>
+                Sign me up for email updates
+            </label><br>
+            <input type="submit" value="Submit review">
+        </fieldset>
+    </form>
+</body>
